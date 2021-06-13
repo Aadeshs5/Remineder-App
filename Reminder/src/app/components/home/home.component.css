@@ -1,0 +1,97 @@
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+
+  .appoint-text {
+      text-align: center;
+      color: #455ae9;
+    font-size: 55px;
+    padding: 0px;
+    margin: 0;
+  }
+
+  .booking-text {
+    text-align: center;
+   
+    padding-right: 130px;
+    color: #455ae9;
+    font-size: 55px;
+  }
+  
+  .appointment-main-header {
+      margin-top: 65px;
+  }
+  .heading-text{
+    text-align: center;
+    margin-left: 95px;
+    color: #1638ac;
+  }
+
+.paragraph-msg{
+    text-align: center;
+    color: #455ae9;
+    margin-left: 147px;
+    margin-bottom: 0px;
+}
+
+.started-box {
+    margin-top: 50px;
+    margin-left: 180px;
+}
+
+.get-started {
+    width: 24%;
+   
+    height: 42px;
+}
+
+.date-picker {
+    height: 394px;
+    padding-top: 25px;
+}
+
+.date-calender {
+    margin-left: 150px;
+}
+
+.login-style {
+    background-color: #455ae9 !important;
+    color: white !important;
+    border-radius: 30px !important;
+    width: 100px !important;
+}
+
+
