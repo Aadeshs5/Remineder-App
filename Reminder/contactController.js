@@ -20,8 +20,8 @@ exports.index = function (req, res) {
 // Handle create contact actions
 exports.new = function (req, res) {
     var contact = new User();
-    contact.first_name = req.body.first_name;
-    contact.last_name = req.body.last_name;
+    contact.name = req.body.name;
+    contact.phone = req.body.phone;
     contact.email = req.body.email;
    contact.password = req.body.password;
 // save the contact and check for errors

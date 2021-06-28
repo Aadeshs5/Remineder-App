@@ -2,11 +2,7 @@
 var mongoose = require('mongoose');
 // Setup schema
 var userSchema = mongoose.Schema({
-    first_name: {
-        type: String,
-        required: true
-    },
-    last_name: {
+    name: {
         type: String,
         required: true
     },
@@ -14,10 +10,9 @@ var userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    password: {
-        type: String,
-        required: true
-    },
+    gender: String,
+    phone: String,
+    password: String,
     create_date: {
         type: Date,
         default: Date.now

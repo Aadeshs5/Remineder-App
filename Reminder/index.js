@@ -2,6 +2,8 @@
 let express = require('express');
 // Import Body parser
 let bodyParser = require('body-parser');
+var cors = require('cors');
+
 // Import Mongoose
 let mongoose = require('mongoose');
 // Initialize the app
@@ -14,6 +16,17 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 app.use(bodyParser.json());
+
+app.use(cors());
+
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "GET , PUT , POST , DELETE");
+    res.header("Access-Control-Allow-Headers", "Content-Type, x-requested-with");
+    next(); // Important
+})
+
+
 // Connect to Mongoose and set connection variable
 mongoose.connect('mongodb://localhost/reminder', { useNewUrlParser: true});
 
